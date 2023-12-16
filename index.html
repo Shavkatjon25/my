@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <div class="ota" >
+            <div >
+                <h1>1-savol</h1>
+                <button class="savol">Savol</button>
+                <button class="kod">Kod</button>
+                <button class="bosh">Start</button>
+            </div>
+            <div>
+                <h1>2-savol</h1>
+                <button class="savol2">Savol</button>
+                <button class="kod2">Kod</button>
+                <button class="bosh2">Start</button>
+            </div>
+            <div>
+                <h1>3-savol</h1>
+                <button class="savol3">Savol</button>
+                <button class="kod3">Kod</button>
+                <button class="bosh3">Start</button>
+            </div>
+            <div>
+                <h1>4-savol</h1>
+                <button class="savol4">Savol</button>
+                <button class="kod4">Kod</button>
+                <button class="bosh4">Start</button>
+            </div>
+            <div>
+                <h1>5-savol</h1>
+                <button class="savol5">Savol</button>
+                <button class="kod5">Kod</button>
+                <button class="bosh5">Start</button>
+            </div>
+            <div>
+                <h1>6-savol</h1>
+                <button class="savol6">Savol</button>
+                <button class="kod6">Kod</button>
+                <button class="bos6">Start</button>
+            </div>
+        </div>
+
+
+        <div id="ok" style="width: 70vw; height: 80vh;background-color: aqua; margin: 20px; padding: 20px; border-radius: 20px; overflow: auto;">
+            <div class="b1">
+                <h2 id="savo1" > 1-dan 7-gacha bo’lgan natural sonlar berilgan. Kiritilgan songa mos ravishda hafta kunlarini so’zda ifodalovchi dastur tuzilsin.</h2>
+                <div id="kod1" >
+                    <h3>    const arr=["Dushanba","Seshanba","Payshanba","Chorshanba","Juma","Shanba"]</h3>
+                    <h3>    const kun=prompt("Kunni kiriting");</h3>
+                    <h3>    const domEl=document.getElementById("javob");</h3>
+                    <h3>    domEl.textContent=arr[kun-1];</h3>
+                </div>
+                <h2 id="javob" ></h2>
+            </div>
+
+
+            <div class="b2">
+                <h2 id="matn2"> Bir kilogram konfetning narxi berilgan (haqiqiy son). 0,1 kg , 0,2 kg ,  0,3 kg , 0,4 kg , … , 1 kg  konfetni narxini ekranga chiqarish dasturi tuzilsin.</h2>
+                <div id="co4">
+                    <h3>    const javob2=document.querySelector(".javob2");</h3>
+                    <h3>    let narx=prompt("Narxni kiriting");</h3>
+                    <h3>    for(let i=1;i<=10;i++){</h3>
+                    <h3>        javob2.textContent=javob2.textContent+narx*i*0.1+";   ";</h3>
+                    <h3>    }</h3>
+                </div>
+                <h2 class="javob2"></h2>
+            </div> 
+            
+            
+            <div class="b3">
+                <h1>n  ta elementlari butun sonlardan tashkil topgan massiv berilgan, butun  elementlari tartiblangan (o’sish yoki kamayish tartibida). Berilgan massiv elementlari orasidagi har xil elementlar sonini topish dasturi tuzilsin.</h1>
+                <div>
+                    <h3>let arrSoni=prompt("Massiv elementlar soni");</h3>
+                    <h3>let arr=[];</h3>
+                    <h3>for(let i=1;i<=arrSoni;i++){</h3>
+                    <h3>    arr.push(prompt(i+"-element"));</h3>
+                    <h3>}</h3>
+                    <h3>for(let i=1;i<=arrSoni;i++){</h3>
+                    <h3>    let tf=true;</h3>
+                    <h3>    let element=prompt(i+"-element");</h3>
+                    <h3>    for(let j=1;j<=arrSoni;j++){</h3>
+                    <h3>        if(arr[j]==element){tf=false}</h3>
+                    <h3>    }</h3>
+                    <h3>if(!tf){continue;}</h3>
+                    <h3>arr.push(element);</h3>
+                    <h3>}</h3>
+                    <h3>a3.children[2].textContent=arr.length;</h3>
+                </div>
+                <h2  id="javob3"></h2>
+            </div>
+
+
+            <div class="b4">
+                <h1>m−tartibli kvadrat matritsa berilgan. Matritsaning yordamchi diagonalidan yuqorida yotgan elementlarini 0 ga aylantirish dasturi tuzilsin. Shart  operatoridan foydalanilmasin.</h1>
+                <div>
+
+                </div>
+                <h2  id="javob4"></h2>
+            </div>
+
+
+            <div class="b5">
+                <h1> Aylana radiusi asosida uning uzunligini aniqlovchi haqiqiy tipli  AylanaL R( )  metodi hosil qilinsin. Bunda R  haqiqiy son aylana radiusi  bo’lib, kirish parametri hisoblanadi. AylanaL R( ) metodidan foydalanib kamida uchta aylananing uzunligi hisoblansin</h1>
+                <div>
+                    <h3>let aylanaSoni=prompt("Aylanalar sonini kiriting: ");</h3>
+                    <h3>let uzunlik=[];</h3>
+                    <h3>for(let i=1;i<=aylanaSoni;i++){ </h3>
+                    <h3>let radyus=prompt(i+1+"-aylana radyusi:");</h3>
+                    <h3>uzunlik.push(2*radyus*Math.PI);</h3>
+                    <h3>}</h3>
+                    <h3>for(let i=1;i<=aylanaSoni;i++){ </h3>
+                    <h3>a5.children[2].textContent+=i+1+"-aylana uzunligi: "+uzunlik[i].toFixed(2)+";    ";</h3>
+                    <h3>}</h3>
+                </div>
+                <h2  id="javob4"></h2>
+            </div>
+
+
+            <div class="b6"> 
+                <h1>Lotin harflari va uch xil qavslardan “()”, “[]”,”{}” iborat sart berilgan.  Agar qavs to’g’ri joylashgan bo’lsa 0 chiqarilsin (mos holda har bir ko’rinishi bir xil qavs ochiladi va yopiladi). Aks holda yopuvchi qavs notog’ri qo’yilgan bo’lsa, uning o’rnini chiqarilsin, agar yopuvchi qavslar yetishmasa -1 chiqarish dasturi tuzilsin. </h1>
+                <div>
+                    <h3>     let mtn=prompt("Qavslarga o'ralgan matnni kiriting:");</h3>
+                    <h3>let qavs1=[];</h3>
+                    <h3>qavs1=mtn.split("(");</h3>
+                    <h3>let qavs2=[];</h3>
+                    <h3>qavs2=mtn.split(")");</h3>
+                    <h3> let qavs3=[];</h3>
+                    <h3>qavs3=mtn.split("{");</h3>
+                    <h3> let qavs4=[];</h3>
+                    <h3>qavs4=mtn.split("}");</h3>
+                    <h3> let qavs5=[];</h3>
+                    <h3>qavs5=mtn.split("[");</h3>
+                    <h3> let qavs6=[];</h3>
+                    <h3>qavs6=mtn.split("]");</h3>
+                    <h3>if(qavs1.length==qavs2.length && qavs3.length==qavs4.length && qavs5.length==qavs6.length){a6.children[2].textContent=0;}</h3>
+                    <h3>else{a6.children[2].textContent=-1;}</h3>
+                </div>
+                <h2  id="javob4">1213</h2>
+            </div>
+
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
